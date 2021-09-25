@@ -85,13 +85,13 @@ a {
 }
 
 /* img */
-.box > img {
+.Box > img {
 
     width: 100%;
 
 }
 
-.box {
+.Box {
 
     background-color: #444;
     padding: 130px;
