@@ -1,13 +1,11 @@
 body {
-
     margin: auto 0;
-
 }
 .zone {
     /*padding: 30px 50px;
-    margin: 40px 60px;*/
+    margin: 40px 60px;
     cursor: pointer;
-    /*display:inline-block;*/
+    display:inline-block;*/
     color:#fff;
     font-size: 2em;
     border-radius: 4px;
@@ -15,11 +13,13 @@ body {
     transition: all 0.3s linear;
 }
 
-
 .zone:hover{
     
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
-
+    /*box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;*/
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 
@@ -33,12 +33,18 @@ body {
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen 
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+/*@media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
-}
+}*/
 
 
 /* -----------contacts left all time ----------*/
@@ -60,8 +66,9 @@ a {
 }
 
 /* Cover */
-.container {
+.Container {
 
+    /* show highh :auto */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +76,7 @@ a {
 }
 
 /* Grid */
-.Grid-wrappr {
+.grid-wrappr {
 
     display: grid;
     grid-gap: 20px;
