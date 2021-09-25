@@ -1,0 +1,97 @@
+body {
+
+    margin: auto 0;
+
+}
+.zone {
+    /*padding: 30px 50px;
+    margin: 40px 60px;*/
+    cursor: pointer;
+    /*display:inline-block;*/
+    color:#fff;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+
+.zone:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+
+}
+
+
+/*-------- NAV ---------*/
+.main-nav {
+
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}
+
+
+/* -----------contacts left all time ----------*/
+.push {
+
+    margin-left: auto;
+}
+
+li {
+
+    padding: 20px;
+}
+
+a {
+
+    color: #f5f5f6;
+    text-decoration: none;
+
+}
+
+/* Cover */
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* 50%vh of viewport*/ 
+}
+
+/* Grid */
+.Grid-wrappr {
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax (350px, 1fr));
+
+}
+
+/* img */
+.box > img {
+
+    width: 100%;
+
+}
+
+.box {
+
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+
+footer {
+
+    text-align: center;
+}
